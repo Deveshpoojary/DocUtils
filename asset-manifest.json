@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/DocUtils/static/css/main.928fdda6.css",
+    "main.js": "/DocUtils/static/js/main.51ff2f77.js",
+    "static/js/239.65f63c43.chunk.js": "/DocUtils/static/js/239.65f63c43.chunk.js",
+    "static/js/213.9f52ebe3.chunk.js": "/DocUtils/static/js/213.9f52ebe3.chunk.js",
+    "static/js/732.e2b4ee82.chunk.js": "/DocUtils/static/js/732.e2b4ee82.chunk.js",
+    "static/js/453.bb83d1b5.chunk.js": "/DocUtils/static/js/453.bb83d1b5.chunk.js",
+    "index.html": "/DocUtils/index.html",
+    "main.928fdda6.css.map": "/DocUtils/static/css/main.928fdda6.css.map",
+    "main.51ff2f77.js.map": "/DocUtils/static/js/main.51ff2f77.js.map",
+    "239.65f63c43.chunk.js.map": "/DocUtils/static/js/239.65f63c43.chunk.js.map",
+    "213.9f52ebe3.chunk.js.map": "/DocUtils/static/js/213.9f52ebe3.chunk.js.map",
+    "732.e2b4ee82.chunk.js.map": "/DocUtils/static/js/732.e2b4ee82.chunk.js.map",
+    "453.bb83d1b5.chunk.js.map": "/DocUtils/static/js/453.bb83d1b5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.928fdda6.css",
+    "static/js/main.51ff2f77.js"
+  ]
+}
