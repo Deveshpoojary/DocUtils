@@ -3,8 +3,9 @@ import Textutils from './Pages/textutils';
 import PDFConverter from './Pages/PDFConverter';
 import ImageCompressor from './Pages/ImageCompressor';
 import PDFSplitter from './Pages/PDFSplitter';
-import TypeConverter from './Pages/TypeConverter'; // Import the new component
-import { FiFileText, FiImage, FiFile, FiScissors, FiRepeat, FiMenu, FiX } from "react-icons/fi";
+import TypeConverter from './Pages/TypeConverter';
+import MergePDF from "./Pages/MergePDF"; // Import the new MergePDF component
+import { FiFileText, FiImage, FiFile, FiScissors, FiRepeat, FiLayers, FiMenu, FiX } from "react-icons/fi";
 
 function App() {
   const [activeComponent, setActiveComponent] = useState('textutils');
@@ -23,6 +24,8 @@ function App() {
         return <PDFSplitter />;
       case 'typeconverter':
         return <TypeConverter />;
+      case 'mergepdf':
+        return <MergePDF />; // Add the MergePDF component
       default:
         return <Textutils />;
     }
@@ -96,6 +99,15 @@ function App() {
             >
               <FiRepeat className="inline-block mr-2" /> Type Converter
             </li>
+            <li
+              className={`cursor-pointer p-4 mb-2 rounded ${activeComponent === 'mergepdf' ? 'bg-gray-700' : ''}`}
+              onClick={() => {
+                setActiveComponent('mergepdf');
+                setIsSidebarOpen(false);
+              }}
+            >
+              <FiLayers className="inline-block mr-2" /> Merge PDFs
+            </li>
           </ul>
         </div>
 
@@ -107,7 +119,7 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white text-center py-4 sm:absolute sm:bottom-0 sm:left-64 sm:right-0">
-        Designed and developed by <a href="https://deveshpoojary.vercel.app/" className='font-bold'>Devesh G Poojary</a>
+        Designed and developed by <a href="https://deveshpoojary.vercel.app/" className="font-bold">Devesh G Poojary</a>
       </footer>
     </div>
   );

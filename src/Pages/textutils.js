@@ -84,6 +84,7 @@ const TextConverter = () => {
           <button
             onClick={downloadText}
             className="bg-red-500 hover:bg-red-600 text-white rounded-lg px-4 py-2 transition duration-300 flex items-center"
+            disabled={!convertedText && !inputText}
           >
             <FiDownload className="mr-2" /> Download
           </button>
